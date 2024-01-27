@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <h1>Case List View</h1>
+        <template if:true={coldata}>
+        <lightning-datatable
+                key-field="id"
+                data={coldata}
+                columns={columns}>
+        </lightning-datatable>
+    </template>
+
+    </lightning-card>
+    
+</template>
