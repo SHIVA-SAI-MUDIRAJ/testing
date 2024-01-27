@@ -3,7 +3,7 @@ public class caseController {
     public static List<Case> fetchCases(){
         try {
             List<Case> caseList = [Select Id,AccountId,CaseNumber,Status FROM Case Limit 10];
-            system.debug('case list=='+caseList.size());
+           // system.debug('case list=='+caseList.size());
             return caseList;
             
         } catch (Exception e) {
